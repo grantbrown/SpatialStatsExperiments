@@ -40,10 +40,10 @@ class Variogram():
         out_file = File(filename, mode = "w", header = Header())
         out_file.header.scale = (0.001,0.001,0.001)
         grid = self.get_3d_grid(lb, ub, granularity)
-        out_file.x = grid[:,0]* 100
-        out_file.y = grid[:,1] * 100
-        out_file.z = grid[:,2] * 100
-        out_file.intensity = grid[:,2] * 100
+        out_file.x = grid[:,0]* 300
+        out_file.y = grid[:,1] * 300
+        out_file.z = grid[:,2] * 300
+        out_file.intensity = grid[:,2] * 300
         return(out_file)
 
 
